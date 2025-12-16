@@ -1,0 +1,83 @@
+html
+预览
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <!-- 适配手机端 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>发票信息</title>
+    <style>
+        /* 容器整体样式 */
+        .invoice-container {
+            padding: 20px;
+            text-align: center;
+            font-family: "微软雅黑", sans-serif;
+        }
+        /* 标题样式 */
+        .invoice-container h1 {
+            font-size: 22px;
+            font-weight: bold;
+            margin: 30px 0;
+            color: #333;
+        }
+        /* 说明提示样式 */
+        .invoice-container .tips {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.5;
+            margin-bottom: 40px;
+        }
+        /* 信息项容器 */
+        .info-list {
+            text-align: left;
+            width: 80%;
+            margin: 0 auto;
+        }
+        /* 单个信息项（标签+内容） */
+        .info-item {
+            margin-bottom: 25px;
+            font-size: 16px;
+        }
+        .info-item .label {
+            color: #999;
+            display: inline-block;
+            width: 80px; /* 固定标签宽度，让内容对齐 */
+        }
+        .info-item .value {
+            color: #333;
+        }
+        /* 底部提示样式 */
+        .bottom-tips {
+            font-size: 14px;
+            color: #999;
+            margin-top: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div class="invoice-container">
+        <!-- 标题 -->
+        <h1>发票信息</h1>
+        <!-- 说明提示 -->
+        <p class="tips">以下信息仅为发票二维码所含信息，并不代表查验发票真伪的结果。</p>
+        <!-- 发票信息列表 -->
+        <div class="info-list">
+            <div class="info-item">
+                <span class="label">发票号码</span>
+                <span class="value">25362000000207022313</span>
+            </div>
+            <div class="info-item">
+                <span class="label">合计金额</span>
+                <span class="value">¥4700000(含税)</span>
+            </div>
+            <div class="info-item">
+                <span class="label">开票日期</span>
+                <span class="value">2025.03.28</span>
+            </div>
+        </div>
+        <!-- 底部提示 -->
+        <p class="bottom-tips">如需查验发票真伪，请通过税务机关提供的官方渠道进行查验。</p>
+    </div>
+</body>
+</html>
